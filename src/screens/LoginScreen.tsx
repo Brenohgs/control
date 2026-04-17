@@ -4,7 +4,7 @@ export default function LoginScreen({navigation}: any){
     return(
         <View style={styles.container}>
             <View style={styles.center}>
-                <Text style={styles.title}>Control</Text>
+                <Text style={styles.title}>Entre e encontre suas receitas</Text>
                 <TextInput
                 placeholder="E-mail"
                 style={styles.input}/>
@@ -40,7 +40,7 @@ export default function LoginScreen({navigation}: any){
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#e2f5ed',
         padding: 20
     },
 
@@ -53,18 +53,19 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         marginBottom: 40,
         textAlign: "center",
+        color: "#1c5e42"
     },
 
     input: {
         borderWidth: 1,
-        borderColor: "#ccc",
+        borderColor: "#1c5e42",
         borderRadius: 8,
         padding: 12,
         marginBottom: 15,
     },
 
     button: {
-        backgroundColor: "#1E88E5",
+        backgroundColor: "#1c4e42",
         padding: 15,
         borderRadius: 8,
         alignItems: "center",
@@ -73,6 +74,7 @@ const styles = StyleSheet.create({
     buttonText:{
         color: "#fff",
         fontWeight: "bold",
+        fontSize: 25
     },
 
     link: {
