@@ -1,9 +1,9 @@
 import { View, Text} from "react-native";
 
-export default function RegisterScreen(){
+export default function EntidadesScreen(){
 return(
     <View>
-        <Text>Registro</Text>
+        <Text>Entidades</Text>
     </View>
 );
 }
