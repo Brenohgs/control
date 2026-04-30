@@ -12,7 +12,7 @@ export default function AuthRoutes(){
         
       <Stack.Screen name="Login" component={LoginScreen} options={{ title:""}} />
 
-      <Stack.Screen name="Register" component={RegisterScreen} options={{ title:""}} />
+      <Stack.Screen name="Cadastro" component={RegisterScreen} options={{ title:""}} />
 
       <Stack.Screen name="About" component={AboutScreen} options={{ title:""}} />
 
