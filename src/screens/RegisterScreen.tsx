@@ -44,12 +44,12 @@ export default function RegisterScreen({ navigation }: any) {
             onPress={pickImage}>
 
                 {image ? (
-                    <image
+                    <Image
                     source={{ uri: image }}
                     style={styles.avatar} />
                 ) : (
 
-                    <Text style={styles.ImageText}>
+                    <Text style={styles.imageText}>
                         Selecionar foto
                     </Text>
                 

@@ -4,43 +4,43 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function EntidadesScreen(){
 return(
-   <SafeAreaView style={StyleSheet.safeArea}>
+   <SafeAreaView style={styles.safeArea}>
     <ScrollView
-    contentContainerStyle={StyleSheet.container}
-    showsVerticalScrollIndicador={false}
+    contentContainerStyle={styles.container}
+    showsVerticalScrollIndicator={false}
     >
-        <Text style={StyleSheet.title}>Cadastrar Entidade</Text>
+        <Text style={styles.title}>Cadastrar Entidade</Text>
 
         <TextInput
         placeholder="Nome"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="CEP"
         keyboardType="numeric"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="Endereço"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="Número"
         keyboardType="numeric"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="Bairro"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="Cidade"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
@@ -51,17 +51,17 @@ return(
         <TextInput
         placeholder="Telefone"
         keyboardType="phone-pad"
-        style={StyleSheet.input}
+        style={styles.input}
         />
 
         <TextInput
         placeholder="Observação"
         multiline
-        style={[StyleSheet.input, StyleSheet.textArea]}
+        style={[styles.input, styles.textArea]}
         />
 
-        <TouchableOpacity style={StyleSheet.button}>
-            <Text style={StyleSheet.buttonText}>Salvar</Text>
+        <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonText}>Salvar</Text>
         </TouchableOpacity>
         </ScrollView>
    </SafeAreaView>
@@ -85,10 +85,14 @@ const styles = StyleSheet.create({
     },
     input:{
         borderWidth: 1,
-        borderColor: "#ccc"
+        borderColor: "#ccc",
         borderRadius: 8,
         padding: 12,
         marginBottom: 15
+    },
+    textArea: {
+        minHeight: 100,
+        textAlignVertical: "top"
     },
     button:{
         backgroundColor: "#1E88E5",
@@ -101,5 +105,4 @@ const styles = StyleSheet.create({
         color: "#fff",
         fontWeight:"bold"
     }
-)};
-
+});

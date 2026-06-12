@@ -14,10 +14,9 @@ export default function AuthRoutes(){
 
       <Stack.Screen name="Cadastro" component={RegisterScreen} options={{ title:""}} />
 
-      <Stack.Screen name="About" component={AboutScreen} options={{ title:""}} />
+      <Stack.Screen name="Sobre" component={AboutScreen} options={{ title:""}} />
 
     </Stack.Navigator>
   );
 };
-
 
